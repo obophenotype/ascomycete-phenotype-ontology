@@ -1,0 +1,3870 @@
+format-version: 1.2
+data-version: releases/2014-08-23
+date: 30:06:2014 17:05
+saved-by: mariacostanzo
+auto-generated-by: OBO-Edit 2.1
+subsetdef: AspGD "APO terms in use at AspGD"
+subsetdef: CGD "APO terms in use at CGD"
+subsetdef: CryptoGD "APO terms in use at CryptoGD"
+subsetdef: SGD "APO terms in use at SGD"
+default-namespace: ascomycete_phenotype_ontology
+namespace-id-rule: * APO:$sequence(7,0000001,9999999)$
+remark: Filtered by Subset contains \"SGD\"
+ontology: apo
+
+[Term]
+id: APO:0000001
+name: qualifier
+namespace: qualifier
+alt_id: YPO:0000001
+def: "The direction of change in the mutant compared to wild type." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+
+[Term]
+id: APO:0000002
+name: abnormal
+namespace: qualifier
+alt_id: YPO:0000002
+def: "The observed phenotype is detectably different from that in the wild type." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000001 ! qualifier
+
+[Term]
+id: APO:0000003
+name: decreased
+namespace: qualifier
+alt_id: YPO:0000003
+def: "The observed feature is decreased compared to that in the wild type (slower, weaker, lower, smaller, etc.)." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000004
+name: increased
+namespace: qualifier
+alt_id: YPO:0000004
+def: "The observed feature is increased compared to that in the wild type (faster, stronger, higher, larger, etc.)." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000005
+name: absent
+namespace: qualifier
+alt_id: YPO:0000005
+def: "The observed feature is not detectable in the mutant." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000003 ! decreased
+
+[Term]
+id: APO:0000006
+name: mutant_type
+namespace: mutant_type
+alt_id: YPO:0000006
+def: "A description of the effect of the mutation on the gene product function." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+
+[Term]
+id: APO:0000007
+name: misexpression
+namespace: mutant_type
+alt_id: YPO:0000007
+def: "The mutation results in expression of the gene product at a developmental stage, in a cell type, or at a subcellular location different from that at which the wild-type gene is expressed." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000008
+name: overexpression
+namespace: mutant_type
+alt_id: YPO:0000008
+def: "The mutation causes expression of the otherwise normal gene product to higher levels than wild-type." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000009
+name: activation
+namespace: mutant_type
+alt_id: YPO:0000009
+def: "The mutation increases the normal activity of a gene product." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000010
+name: gain of function
+namespace: mutant_type
+alt_id: YPO:0000010
+def: "The mutation confers a new activity on the gene product." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000011
+name: null
+namespace: mutant_type
+alt_id: YPO:0000011
+def: "The mutation abolishes completely the function of the gene product." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "loss of function" RELATED [SGD:RSN]
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000012
+name: repressible
+namespace: mutant_type
+alt_id: YPO:0000012
+def: "The mutation leads to reduction of levels of the gene product, often through the use of a repressible promoter." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "depletion" EXACT [SGD:RSN]
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000013
+name: reduction of function
+namespace: mutant_type
+alt_id: YPO:0000013
+def: "The mutation reduces the activity of the gene product." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000014
+name: conditional
+namespace: mutant_type
+alt_id: YPO:0000014
+def: "The activity of the gene product is normal under some conditions and altered under others." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000015
+name: unspecified
+namespace: mutant_type
+alt_id: YPO:0000015
+def: "The mutation type is not specified in the reference." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000016
+name: not yet recorded
+namespace: mutant_type
+alt_id: YPO:0000016
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because there was overlap with another term unspecified. The term unspecified will be used in cases where a more appropriate descriptor cannot be identified.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000017
+name: observable
+namespace: observable
+alt_id: YPO:0000017
+def: "Features of ascomycete fungal cells, cultures, or colonies that can be detected, observed, measured, or monitored." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+
+[Term]
+id: APO:0000018
+name: experiment_type
+namespace: experiment_type
+alt_id: YPO:0000018
+def: "A description of the experimental approach." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+
+[Term]
+id: APO:0000019
+name: systematic null mutation set
+namespace: experiment_type
+alt_id: YPO:0000019
+def: "OBSOLETE. Robotic generation and analysis of large-scale, genome-wide knockout sets." [SGD:RSN]
+comment: This term was made obsolete as it is a compound term containing information on the both the scope of the experiment as well as the mutant type.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+replaced_by: APO:0000011
+replaced_by: APO:0000235
+
+[Term]
+id: APO:0000020
+name: classical genetics
+namespace: experiment_type
+alt_id: YPO:0000020
+def: "Phenotypic analysis of one or a few mutant strains in small-scale, focused experiments that do not require knowledge of the entire genome sequence." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000192 ! phenotype assays
+
+[Term]
+id: APO:0000021
+name: competitive growth
+namespace: experiment_type
+alt_id: YPO:0000021
+def: "Quantitative data on survival of a mutant strain, obtained in large scale experiments where mutants are grown together with wild type or other mutants for many generations." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000022
+name: protein activity
+namespace: observable
+alt_id: YPO:0000022
+def: "The enzymatic or other activity of a protein." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000023
+name: development
+namespace: observable
+alt_id: YPO:0000023
+def: "Developmental processes." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000024
+name: budding
+namespace: observable
+alt_id: YPO:0000024
+def: "The formation of a bud, which develops into a daughter cell during asexual reproduction." [SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000025
+name: axial budding pattern
+namespace: observable
+alt_id: YPO:0000025
+def: "Localization of the newly emerging bud near the site of the previous bud." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "haploid budding pattern" RELATED [SGD:RSN]
+is_a: APO:0000200 ! budding pattern
+
+[Term]
+id: APO:0000026
+name: bipolar budding pattern
+namespace: observable
+alt_id: YPO:0000026
+def: "Localization of the emerging bud at the cell pole opposite the previous bud site." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "diploid budding pattern" RELATED [SGD:RSN]
+is_a: APO:0000200 ! budding pattern
+
+[Term]
+id: APO:0000027
+name: filamentous growth
+namespace: observable
+alt_id: YPO:0000027
+def: "Growth in a threadlike, filamentous shape." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000028
+name: invasive growth
+namespace: observable
+alt_id: YPO:0000028
+def: "Penetration of cells into a solid substrate during filamentous growth." [SGD:rsn]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000027 ! filamentous growth
+
+[Term]
+id: APO:0000029
+name: pseudohyphal growth
+namespace: observable
+alt_id: YPO:0000029
+def: "Growth in a pattern that occurs in conditions of nitrogen limitation and abundant fermentable carbon source. Cells become elongated, switch to a unipolar budding pattern, remain physically attached to each other, and invade the growth substrate." [SGD:krc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000027 ! filamentous growth
+
+[Term]
+id: APO:0000030
+name: lifespan
+namespace: observable
+alt_id: YPO:0000030
+def: "The duration of the life of an individual organism." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000031
+name: sexual cycle
+namespace: observable
+alt_id: YPO:0000031
+def: "The process of sexual reproduction." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000032
+name: mating response
+namespace: observable
+alt_id: YPO:0000032
+def: "The interaction between organisms leading to mating." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000031 ! sexual cycle
+
+[Term]
+id: APO:0000033
+name: cell fusion
+namespace: observable
+alt_id: YPO:0000033
+def: "The fusion of individual cells from each partner during mating." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000034
+name: mating efficiency
+namespace: observable
+alt_id: YPO:0000034
+def: "The proportion of cells within a population that are able to mate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000035
+name: nuclear fusion during mating
+namespace: observable
+alt_id: YPO:0000035
+def: "The fusion of the nuclei of two mating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "karyogamy" EXACT []
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000036
+name: pheromone production
+namespace: observable
+alt_id: YPO:0000036
+def: "The production of mating pheromones." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000037
+name: pheromone sensitivity
+namespace: observable
+alt_id: YPO:0000037
+def: "Sensitivity to mating pheromones produced by cells of the opposite mating type." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000038
+name: shmoo formation
+namespace: observable
+alt_id: YPO:0000038
+def: "An alteration of morphology such that the cell has a mating projection, formed in response to mating pheromone by cells of Saccharomyces and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles." [SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000032 ! mating response
+
+[Term]
+id: APO:0000039
+name: meiosis
+namespace: observable
+alt_id: YPO:0000039
+def: "A specialized cell division in which a single diploid cell undergoes two nuclear divisions following a single round of DNA replication in order to produce four daughter cells that contain half the number of chromosomes as the diploid cell." [GOC:dph]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000031 ! sexual cycle
+
+[Term]
+id: APO:0000040
+name: meiotic recombination
+namespace: observable
+alt_id: YPO:0000040
+def: "The exchange of genetic material between non-sister chromatids in a pair of homologous chromosomes during meiosis." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000039 ! meiosis
+
+[Term]
+id: APO:0000041
+name: sporulation
+namespace: observable
+alt_id: YPO:0000041
+def: "The formation of ascospores, which are the products of meiosis." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000031 ! sexual cycle
+
+[Term]
+id: APO:0000042
+name: spore germination
+namespace: observable
+alt_id: YPO:0000042
+def: "The production of viable cells arising from sexual spores." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000041 ! sporulation
+
+[Term]
+id: APO:0000043
+name: spore wall formation
+namespace: observable
+alt_id: YPO:0000043
+def: "The biogenesis of specialized cell walls around developing ascospores." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000041 ! sporulation
+
+[Term]
+id: APO:0000044
+name: sporulation efficiency
+namespace: observable
+alt_id: YPO:0000044
+def: "The percentage of diploid cells in a population that undergo meiosis and form spores under sporulation-inducing conditions." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000041 ! sporulation
+
+[Term]
+id: APO:0000045
+name: sterile
+namespace: observable
+alt_id: YPO:0000045
+def: "The sterile phenotype is the inability to mate with cells of the opposite mating type under conditions that normally promote mating." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000031 ! sexual cycle
+
+[Term]
+id: APO:0000046
+name: silencing
+namespace: observable
+alt_id: YPO:0000046
+def: "Repression of transcription by altering the structure of chromatin, e.g. by conversion of large regions of DNA into an inaccessible state often called heterochromatin." [GOC:mah]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000047
+name: transposable element transposition
+namespace: observable
+alt_id: YPO:0000047
+def: "Integration of a transposable element  into new positions in the genome." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000048
+name: virulence
+namespace: observable
+alt_id: YPO:0000048
+def: "The ability to cause disease in another organism." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000287 ! interaction with host/environment
+
+[Term]
+id: APO:0000049
+name: morphology
+namespace: observable
+alt_id: YPO:0000049
+def: "The size or shape of subcellular structures, cells, or multicellular structures." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000050
+name: cellular morphology
+namespace: observable
+alt_id: YPO:0000050
+def: "The size or shape of cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000049 ! morphology
+
+[Term]
+id: APO:0000051
+name: cell shape
+namespace: observable
+alt_id: YPO:0000051
+def: "The shape of the cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000052
+name: cell size
+namespace: observable
+alt_id: YPO:0000052
+def: "The size of the cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000053
+name: cell wall morphology
+namespace: observable
+alt_id: YPO:0000053
+def: "The size, shape, or appearance of the cell wall." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000054
+name: cytoskeleton morphology
+namespace: observable
+alt_id: YPO:0000054
+def: "The size, shape, or appearance of the cytoskeleton." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000055
+name: mitochondrial morphology
+namespace: observable
+alt_id: YPO:0000055
+def: "The size, shape, or appearance of the mitochondria." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000056
+name: bud neck morphology
+namespace: observable
+alt_id: YPO:0000056
+def: "The size or shape of the bud neck, which is the region where the bud joins the mother cell." [SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000057
+name: nuclear morphology
+namespace: observable
+alt_id: YPO:0000057
+def: "The size, shape, or appearance of the nucleus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000303 ! endomembrane system morphology
+
+[Term]
+id: APO:0000058
+name: peroxisomal morphology
+namespace: observable
+alt_id: YPO:0000058
+def: "The size, shape, or appearance of the peroxisomes." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000303 ! endomembrane system morphology
+
+[Term]
+id: APO:0000059
+name: vacuolar morphology
+namespace: observable
+alt_id: YPO:0000059
+def: "The size, shape, or appearance of the vacuole." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000303 ! endomembrane system morphology
+
+[Term]
+id: APO:0000060
+name: colony appearance
+namespace: observable
+alt_id: YPO:0000060
+def: "The appearance of colonies of cells growing on a solid substrate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000158 ! culture appearance
+
+[Term]
+id: APO:0000061
+name: colony color
+namespace: observable
+alt_id: YPO:0000061
+def: "The color of colonies of cells growing on a solid substrate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000060 ! colony appearance
+
+[Term]
+id: APO:0000062
+name: colony shape
+namespace: observable
+alt_id: YPO:0000062
+def: "The shape of colonies of cells growing on a solid substrate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000060 ! colony appearance
+
+[Term]
+id: APO:0000063
+name: colony size
+namespace: observable
+alt_id: YPO:0000063
+def: "The size of colonies of cells growing on a solid substrate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000060 ! colony appearance
+
+[Term]
+id: APO:0000064
+name: liquid culture appearance
+namespace: observable
+alt_id: YPO:0000064
+def: "The appearance of a liquid culture of cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000158 ! culture appearance
+
+[Term]
+id: APO:0000065
+name: flocculation
+namespace: observable
+alt_id: YPO:0000065
+def: "Adhesion and aggregation of cells in liquid culture to produce clumps of cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000064 ! liquid culture appearance
+
+[Term]
+id: APO:0000066
+name: cellular processes
+namespace: observable
+alt_id: YPO:0000066
+def: "Processes occurring at the cellular level." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000067
+name: cell cycle arrest in G1 phase
+namespace: observable
+alt_id: YPO:0000067
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000255
+
+[Term]
+id: APO:0000068
+name: cell cycle arrest at G2 phase
+namespace: observable
+alt_id: YPO:0000068
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000254
+
+[Term]
+id: APO:0000069
+name: cell cycle arrest at START
+namespace: observable
+alt_id: YPO:0000069
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000256
+
+[Term]
+id: APO:0000070
+name: cell cycle arrest
+namespace: observable
+alt_id: YPO:0000070
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000253
+
+[Term]
+id: APO:0000071
+name: cytokinesis
+namespace: observable
+alt_id: YPO:0000071
+def: "The division of the cytoplasm and the plasma membrane of a cell and its separation into two daughter cells." [GOC:mtg_cell_cycle]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000072 ! mitotic cell cycle
+
+[Term]
+id: APO:0000072
+name: mitotic cell cycle
+namespace: observable
+alt_id: YPO:0000072
+def: "A cycle of DNA replication and cell division via mitosis." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000073
+name: intracellular transport
+namespace: observable
+alt_id: YPO:0000073
+def: "Transport of substances within cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000074
+name: autophagy
+namespace: observable
+alt_id: YPO:0000074
+def: "The delivery and degradation of autophagy markers to the vacuole via the autophagic pathway." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000075
+name: endocytosis
+namespace: observable
+alt_id: YPO:0000075
+def: "The uptake and delivery of external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000076
+name: mitochondrial transport
+namespace: observable
+alt_id: YPO:0000076
+def: "Import of proteins into mitochondria." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000129 ! protein transport
+
+[Term]
+id: APO:0000077
+name: nuclear transport
+namespace: observable
+alt_id: YPO:0000077
+def: "Transport of proteins or RNAs into or out of the nucleus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000129 ! protein transport
+
+[Term]
+id: APO:0000078
+name: protein secretion
+namespace: observable
+alt_id: YPO:0000078
+def: "Transport of proteins out of the cell by fusion of a membrane-bounded vesicle containing the proteins by fusion of the vesicle with the plasma membrane." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "exocytosis" RELATED []
+is_a: APO:0000129 ! protein transport
+
+[Term]
+id: APO:0000079
+name: vacuolar transport
+namespace: observable
+alt_id: YPO:0000079
+def: "Transport of proteins into the vacuole." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000129 ! protein transport
+
+[Term]
+id: APO:0000080
+name: stress resistance
+namespace: observable
+alt_id: YPO:0000080
+def: "The level of resistance to stress conditions." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000081
+name: killer toxin resistance
+namespace: observable
+alt_id: YPO:0000081
+def: "The level of resistance to killer toxin, which is encoded on double-stranded RNA viruses carried by some yeast strains." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000215 ! toxin resistance
+
+[Term]
+id: APO:0000082
+name: osmotic stress resistance
+namespace: observable
+alt_id: YPO:0000082
+def: "The level of resistance to high or low osmolarity." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000083
+name: oxidative stress resistance
+namespace: observable
+alt_id: YPO:0000083
+def: "The level of resistance to oxidative stress." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000084
+name: radiation resistance
+namespace: observable
+alt_id: YPO:0000084
+def: "The level of resistance to radiation." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000085
+name: UV resistance
+namespace: observable
+alt_id: YPO:0000085
+def: "The level of resistance to ultraviolet radiation." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000084 ! radiation resistance
+
+[Term]
+id: APO:0000086
+name: X ray resistance
+namespace: observable
+alt_id: YPO:0000086
+def: "The level of resistance to X ray exposure." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000194 ! ionizing radiation resistance
+
+[Term]
+id: APO:0000087
+name: resistance to chemicals
+namespace: observable
+alt_id: YPO:0000087
+def: "The level of resistance to exposure to chemicals." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000088
+name: drug resistance
+namespace: observable
+alt_id: YPO:0000088
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete, as resistance to chemicals was deemed a better choice.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+replaced_by: APO:0000087
+
+[Term]
+id: APO:0000089
+name: budding index
+namespace: observable
+alt_id: YPO:0000089
+def: "The percentage or fraction of budded cells in a population." [SGD:curators]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000024 ! budding
+
+[Term]
+id: APO:0000090
+name: metal resistance
+namespace: observable
+alt_id: YPO:0000090
+def: "The level of resistance to a specific metal or metals." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000091
+name: starvation resistance
+namespace: observable
+alt_id: YPO:0000091
+def: "The level of resistance to starvation conditions." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000092
+name: temperature sensitive growth
+namespace: observable
+alt_id: YPO:0000092
+def: "Sensitivity to temperatures that are higher or lower than optimal growth temperature." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000093
+name: thermotolerance
+namespace: observable
+alt_id: YPO:0000093
+def: "The ability to survive a period of exposure to extremely high temperature (heat shock)." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000094
+name: metabolism and growth
+namespace: observable
+alt_id: YPO:0000094
+def: "Processes relating to metabolism and growth." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000095
+name: chemical compound accumulation
+namespace: observable
+alt_id: YPO:0000095
+def: "The production and/or storage of a specified chemical compound." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000096
+name: nutrient utilization
+namespace: observable
+alt_id: YPO:0000096
+def: "The ability to utilize specified substances as nutrients." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000097
+name: auxotrophy
+namespace: observable
+alt_id: YPO:0000097
+def: "The inability of an organism to synthesize a specified organic compound required for its growth." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000098
+name: utilization of carbon source
+namespace: observable
+alt_id: YPO:0000098
+def: "The ability to utilize the specified compound as a carbon source." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000099
+name: utilization of nitrogen source
+namespace: observable
+alt_id: YPO:0000099
+def: "The ability to utilize the specified compound as a source of nitrogen." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000100
+name: nutrient uptake
+namespace: observable
+alt_id: YPO:0000100
+def: "Uptake of nutrients into a cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000101
+name: fermentative metabolism
+namespace: observable
+alt_id: YPO:0000101
+def: "Growth with energy derived from fermentation; growth on a fermentable carbon source such as glucose." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "fermentable carbon source utilization" RELATED [SGD:RSN]
+is_a: APO:0000098 ! utilization of carbon source
+
+[Term]
+id: APO:0000102
+name: respiratory metabolism
+namespace: observable
+alt_id: YPO:0000102
+def: "Growth with energy derived from respiration; growth on a non-fermentable carbon source. Examples of non-fermentable carbon sources include glycerol, ethanol, and lactate." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "non-fermentable carbon source utilization" RELATED [SGD:RSN]
+is_a: APO:0000098 ! utilization of carbon source
+
+[Term]
+id: APO:0000103
+name: respiratory growth rate
+namespace: observable
+alt_id: YPO:0000103
+def: "OBSOLETE." []
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000309
+
+[Term]
+id: APO:0000104
+name: mitochondrial rho- mutation frequency
+namespace: observable
+alt_id: YPO:0000104
+def: "The frequency with rho- (rho minus) mutations occur, In this process, all of the mitochondrial genome except for a relatively short segment is lost. The retained segment is amplified and reiterated in a circular genome that is roughly the size of the wild-type genome." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000105 ! mitochondrial genome maintenance
+
+[Term]
+id: APO:0000105
+name: mitochondrial genome maintenance
+namespace: observable
+alt_id: YPO:0000105
+def: "The maintenance of a stable and complete mitochondrial genome." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000102 ! respiratory metabolism
+
+[Term]
+id: APO:0000106
+name: vegetative growth
+namespace: observable
+alt_id: YPO:0000106
+def: "Growth under standard culture conditions (liquid or solid media)." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000107
+name: growth rate in exponential phase
+namespace: observable
+alt_id: YPO:0000107
+def: "OBSOLETE: Growth rate in liquid culture during the exponential phase." [SGD:curators]
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000310
+
+[Term]
+id: APO:0000108
+name: growth rate in post-diauxic phase
+namespace: observable
+alt_id: YPO:0000108
+def: "OBSOLETE: Growth rate in liquid culture during the post-diauxic phase." [SGD:curators]
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000311
+
+[Term]
+id: APO:0000109
+name: survival rate in stationary phase
+namespace: observable
+alt_id: YPO:0000109
+def: "The rate of survival in liquid stationary phase cultures." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000106 ! vegetative growth
+
+[Term]
+id: APO:0000110
+name: competitive fitness
+namespace: observable
+alt_id: YPO:0000110
+def: "The ability of a mutant strain to grow or survive under conditions of direct competition with wild type or other mutants." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000216 ! fitness
+
+[Term]
+id: APO:0000111
+name: viability
+namespace: observable
+alt_id: YPO:0000111
+def: "The proportion of cells in a sample that are viable, i.e. able to form colonies. Often measured by spotting aliquots of a dilution series on a plate." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000216 ! fitness
+
+[Term]
+id: APO:0000112
+name: inviable
+namespace: observable
+alt_id: YPO:0000112
+def: "The inability to grow under standard growth conditions. For S. cerevisiae, this means that visible colonies are not formed from single cells on complete glucose medium (YPD) plates at 30 deg C under normal atmospheric conditions." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000217 ! essentiality
+
+[Term]
+id: APO:0000113
+name: viable
+namespace: observable
+alt_id: YPO:0000113
+def: "The ability to grow under standard growth conditions. For S. cerevisiae, this means that visible colonies are formed from single cells on complete glucose medium (YPD) plates at 30 deg C under normal atmospheric conditions." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000217 ! essentiality
+
+[Term]
+id: APO:0000114
+name: large-scale survey
+namespace: experiment_type
+alt_id: YPO:0000114
+def: "Generation and analysis of genome-wide sets of mutants that typically utilizes robotic methods." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000192 ! phenotype assays
+
+[Term]
+id: APO:0000115
+name: other method
+namespace: experiment_type
+alt_id: YPO:0000115
+def: "OBSOLETE. This term defined as 'novel techniques' has been obsoleted as it was a remnant of the original mutant types that has not been used." [SGD:curators]
+comment: This term was made obsolete because it was a remnant of the original mutant types that has never been used. We will replace this using either a classical genetics or large-scale survey experiment type.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000116
+name: other mutant type
+namespace: mutant_type
+alt_id: YPO:0000116
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it does not fit within the new descriptor terminology. In cases where a specific descriptor term cannot be identified use the term unspecified.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000117
+name: normal
+namespace: qualifier
+alt_id: YPO:0000117
+def: "The observed phenotype shows no detectable difference between the mutant and the wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "wild type" RELATED [SGD:RSN]
+is_a: APO:0000001 ! qualifier
+
+[Term]
+id: APO:0000118
+name: nuclear position
+namespace: observable
+alt_id: YPO:0000118
+def: "The location of the nucleus or nuclei within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000119
+name: size of nucleus
+namespace: observable
+alt_id: YPO:0000119
+def: "The size of the nucleus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000057 ! nuclear morphology
+
+[Term]
+id: APO:0000120
+name: actin cytoskeleton morphology
+namespace: observable
+alt_id: YPO:0000120
+def: "The size, shape, or appearance of the actin cytoskeleton." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000054 ! cytoskeleton morphology
+
+[Term]
+id: APO:0000121
+name: bud direction
+namespace: observable
+alt_id: YPO:0000121
+def: "OBSOLETE: This term was not defined before being obsoleted." []
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000122
+name: cell cycle arrest in M phase
+namespace: observable
+alt_id: YPO:0000122
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000258
+
+[Term]
+id: APO:0000123
+name: recovery from pheromone-induced cell cycle arrest
+namespace: observable
+alt_id: YPO:0000123
+def: "Resumption of the cell cycle after the arrest that occurs in response to the presence of mating pheromones from cells of the opposite mating type." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000037 ! pheromone sensitivity
+
+[Term]
+id: APO:0000124
+name: pheromone-induced cell cycle arrest
+namespace: observable
+alt_id: YPO:0000124
+def: "Arrest of the cell cycle that occurs in response to the presence of mating pheromones from cells of the opposite mating type." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000037 ! pheromone sensitivity
+
+[Term]
+id: APO:0000125
+name: utilization of phosphorus source
+namespace: observable
+alt_id: YPO:0000125
+def: "The ability to utilize the specified compound as a source of phosphorus." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000126
+name: nuclear import
+namespace: observable
+alt_id: YPO:0000126
+def: "Transport of proteins or RNAs into or out of the nucleus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000077 ! nuclear transport
+
+[Term]
+id: APO:0000127
+name: nuclear export
+namespace: observable
+alt_id: YPO:0000127
+def: "Export of proteins or RNAs from the nucleus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000077 ! nuclear transport
+
+[Term]
+id: APO:0000128
+name: peroxisomal transport
+namespace: observable
+alt_id: YPO:0000128
+def: "Import of proteins into peroxisomes." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000129 ! protein transport
+
+[Term]
+id: APO:0000129
+name: protein transport
+namespace: observable
+alt_id: YPO:0000129
+def: "Delivery of proteins to specific locations." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "protein localization" RELATED [SGD:RSN]
+synonym: "protein targeting" RELATED [SGD:RSN]
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000130
+name: small molecule transport
+namespace: observable
+alt_id: YPO:0000130
+def: "Transport of small molecules into, out of, or within the cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000131
+name: protein/peptide modification
+namespace: observable
+alt_id: YPO:0000131
+def: "The covalent modification of a specified protein." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000132
+name: RNA localization
+namespace: observable
+alt_id: YPO:0000132
+def: "Localization of specific RNAs within the cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000133
+name: cell cycle arrest in metaphase
+namespace: observable
+alt_id: YPO:0000133
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000264
+
+[Term]
+id: APO:0000134
+name: cell cycle arrest at the metaphase - anaphase transition
+namespace: observable
+alt_id: YPO:0000134
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000259
+
+[Term]
+id: APO:0000135
+name: cell cycle arrest in anaphase
+namespace: observable
+alt_id: YPO:0000135
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000260
+
+[Term]
+id: APO:0000136
+name: cell cycle arrest in early anaphase
+namespace: observable
+alt_id: YPO:0000136
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000261
+
+[Term]
+id: APO:0000137
+name: cell cycle arrest in mid anaphase
+namespace: observable
+alt_id: YPO:0000137
+def: "OBSOLETE. This term was not defined before being made obsolete." [RSN:SGD]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000262
+
+[Term]
+id: APO:0000138
+name: cell cycle arrest in late anaphase
+namespace: observable
+alt_id: YPO:0000138
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000263
+
+[Term]
+id: APO:0000139
+name: cell cycle arrest in telophase
+namespace: observable
+alt_id: YPO:0000139
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000265
+
+[Term]
+id: APO:0000140
+name: cell cycle arrest in G0 (stationary phase)
+namespace: observable
+alt_id: YPO:0000140
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000267
+consider: APO:0000268
+
+[Term]
+id: APO:0000141
+name: critical cell size at START (G1 cell-size checkpoint)
+namespace: observable
+alt_id: YPO:0000141
+def: "The cell volume (or size) which must be attained before cells can pass through START, a checkpoint which operates in G1, and commit to a full round of cell division." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000052 ! cell size
+
+[Term]
+id: APO:0000142
+name: critical cell size at G2/M (cryptic G2/M cell size checkpoint)
+namespace: observable
+alt_id: YPO:0000142
+def: "The cell volume (or size) which must be attained before cells can pass from G2 into M phase and commit to the completion of mitosis. This normally cryptic checkpoint negatively regulates passage from G2 into M phase." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000052 ! cell size
+
+[Term]
+id: APO:0000143
+name: chromosome/plasmid maintenance
+namespace: observable
+alt_id: YPO:0000143
+def: "The stable maintenance of chromosomes or plasmids." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000144
+name: telomere length
+namespace: observable
+alt_id: YPO:0000144
+def: "The average length of telomeres." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000145
+name: oxidative phosphorylation
+namespace: observable
+alt_id: YPO:0000145
+def: "The oxidation of nutrients to generate ATP, performed by enzymes of the mitochondrial inner membrane." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "respiration" RELATED [SGD:RSN]
+is_a: APO:0000102 ! respiratory metabolism
+
+[Term]
+id: APO:0000146
+name: systematic repressible mutation set
+namespace: experiment_type
+alt_id: YPO:0000146
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete as it is a compound term containing information on both the scope of the experiment as well as the repressible nature of the mutant_type.
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_obsolete: true
+replaced_by: APO:0000012
+replaced_by: APO:0000235
+
+[Term]
+id: APO:0000147
+name: heat sensitivity
+namespace: observable
+alt_id: YPO:0000147
+def: "Sensitivity to temperatures that are higher than optimal growth temperature." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "temperature sensitivity" RELATED [SGD:RSN]
+is_a: APO:0000092 ! temperature sensitive growth
+
+[Term]
+id: APO:0000148
+name: cold sensitivity
+namespace: observable
+alt_id: YPO:0000148
+def: "Sensitivity to temperatures that are lower than optimal growth temperature." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000092 ! temperature sensitive growth
+
+[Term]
+id: APO:0000149
+name: protein/peptide accumulation
+namespace: observable
+alt_id: YPO:0000149
+def: "Abundance of a specified peptide/protein; production to a certain level." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "protein/peptide abundance" RELATED [SGD:RSN]
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000150
+name: null homozygous diploid
+namespace: mutant_type
+alt_id: YPO:0000150
+def: "OBSOLETE. Mutation abolishes function of both alleles of the gene in a diploid strain." [SGD:RSN]
+comment: This term was made obsolete because it is a compound term, with plody related information captured through the experiment_type and null captured as a mutant_type.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+replaced_by: APO:0000011
+
+[Term]
+id: APO:0000151
+name: null heterozygous diploid
+namespace: mutant_type
+alt_id: YPO:0000151
+def: "OBSOLETE. Mutation abolishes function of one allele of the gene in a diploid strain." [SGD:RSN]
+comment: This term was made obsolete because it is a compound term, with plody related information captured through the experiment_type and null captured as a mutant_type.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+replaced_by: APO:0000011
+
+[Term]
+id: APO:0000152
+name: haploinsufficient
+namespace: observable
+alt_id: YPO:0000152
+def: "The heterozygous diploid displays a decreased growth rate relative to a diploid that is homozygous wild type at that locus." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000216 ! fitness
+
+[Term]
+id: APO:0000153
+name: petite
+namespace: observable
+alt_id: YPO:0000153
+def: "The formation of smaller than wild-type colonies on fermentable carbon sources (e.g., glucose), due to a respiratory defect. The respiratory defect could result from mutation or loss of the mitochondrial genome, or from a nuclear mutation affecting respiration. The fermentation of glucose produces ethanol, which is metabolized by the respiratory pathway in wild-type cells and contributes to colony size; respiratory-deficient mutants are unable to utilize this ethanol." [PMID:9301019, SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000102 ! respiratory metabolism
+
+[Term]
+id: APO:0000154
+name: petite-negative
+namespace: observable
+alt_id: YPO:0000154
+def: "The petite-negative phenotype arises from mutation in a nuclear gene that is not essential in an otherwise wild-type strain with an intact mitochondrial genome, but becomes essential in strains lacking the mitochondrial genome, referred to as rho- or rho0. Petite-negative strains cannot grow on fermentable carbon sources (e.g., glucose) in the absence of an intact mitochondrial genome. This phenotype is often assayed as the inability grow in the presence of ethidium bromide, which causes the loss of the mitochondrial genome." [PMID:16267274, SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000102 ! respiratory metabolism
+
+[Term]
+id: APO:0000155
+name: apoptosis
+namespace: observable
+alt_id: YPO:0000155
+def: "An energy-dependent, programmed form of cell death that is characterized by phenotypic markers such as increased levels of reactive oxygen species (often detected via DHE staining), externalization of phosphatidylserine (measured by annexin V staining), and DNA fragmentation (detected using the TUNEL assay). Other processes observed during apoptosis include chromosome condensation and breakdown of mitochondria, including loss of membrane potential and release of cytochrome c. Cells undergoing apoptosis do not lose plasma membrane integrity (measured by propidium iodide staining) until late in the process." [PMID:15556039, PMID:18452540, PMID:18500447, PMID:18782613, PMID:19416362, SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000312 ! cell death
+
+[Term]
+id: APO:0000156
+name: fermentative growth rate
+namespace: observable
+alt_id: YPO:0000156
+def: "OBSOLETE: The rate of growth in the presence of a fermentable carbon source." [SGD:curators]
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000308
+
+[Term]
+id: APO:0000157
+name: utilization of iron source
+namespace: observable
+alt_id: YPO:0000157
+def: "The ability to utilize the specified compound as a source of iron." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000158
+name: culture appearance
+namespace: observable
+alt_id: YPO:0000158
+def: "The appearance of a population of cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000049 ! morphology
+
+[Term]
+id: APO:0000159
+name: biofilm formation
+namespace: observable
+alt_id: YPO:0000159
+def: "The ability to form a layer on solid surfaces with or without other microorganisms." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000158 ! culture appearance
+
+[Term]
+id: APO:0000160
+name: hyphal growth
+namespace: observable
+alt_id: YPO:0000160
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000027 ! filamentous growth
+
+[Term]
+id: APO:0000161
+name: multiple
+namespace: mutant_type
+alt_id: YPO:0000161
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because it was a remnant of the original mutant types that does not fit within the new descriptor choices.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000162
+name: Affinity Capture-MS
+namespace: experiment_type
+alt_id: YPO:0000162
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000163
+name: Affinity Capture-RNA
+namespace: experiment_type
+alt_id: YPO:0000163
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000164
+name: interactions
+namespace: experiment_type
+alt_id: YPO:0000164
+subset: SGD
+is_a: APO:0000018 ! experiment_type
+
+[Term]
+id: APO:0000165
+name: Affinity Capture-Western
+namespace: experiment_type
+alt_id: YPO:0000165
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000166
+name: Biochemical Activity
+namespace: experiment_type
+alt_id: YPO:0000166
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000167
+name: Co-crystal Structure
+namespace: experiment_type
+alt_id: YPO:0000167
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000168
+name: Co-fractionation
+namespace: experiment_type
+alt_id: YPO:0000168
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000169
+name: Co-localization
+namespace: experiment_type
+alt_id: YPO:0000169
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000170
+name: Co-purification
+namespace: experiment_type
+alt_id: YPO:0000170
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000171
+name: Dosage Growth Defect
+namespace: experiment_type
+alt_id: YPO:0000171
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000172
+name: Dosage Lethality
+namespace: experiment_type
+alt_id: YPO:0000172
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000173
+name: Dosage Rescue
+namespace: experiment_type
+alt_id: YPO:0000173
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000174
+name: Epistatic MiniArray Profile
+namespace: experiment_type
+alt_id: YPO:0000174
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000175
+name: FRET
+namespace: experiment_type
+alt_id: YPO:0000175
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000176
+name: Far Western
+namespace: experiment_type
+alt_id: YPO:0000176
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000177
+name: Phenotypic Enhancement
+namespace: experiment_type
+alt_id: YPO:0000177
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000178
+name: Phenotypic Suppression
+namespace: experiment_type
+alt_id: YPO:0000178
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000179
+name: Protein-RNA
+namespace: experiment_type
+alt_id: YPO:0000179
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000180
+name: Protein-peptide
+namespace: experiment_type
+alt_id: YPO:0000180
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000181
+name: Reconstituted Complex
+namespace: experiment_type
+alt_id: YPO:0000181
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000182
+name: Synthetic Growth Defect
+namespace: experiment_type
+alt_id: YPO:0000182
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000183
+name: Synthetic Lethality
+namespace: experiment_type
+alt_id: YPO:0000183
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000184
+name: Synthetic Rescue
+namespace: experiment_type
+alt_id: YPO:0000184
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000185
+name: Two-hybrid
+namespace: experiment_type
+alt_id: YPO:0000185
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000186
+name: genetic interactions
+namespace: experiment_type
+alt_id: YPO:0000186
+subset: SGD
+is_a: APO:0000164 ! interactions
+
+[Term]
+id: APO:0000187
+name: physical interactions
+namespace: experiment_type
+alt_id: YPO:0000187
+subset: SGD
+is_a: APO:0000164 ! interactions
+
+[Term]
+id: APO:0000188
+name: Affinity Chromatography
+namespace: experiment_type
+alt_id: YPO:0000188
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000189
+name: Affinity Precipitation
+namespace: experiment_type
+alt_id: YPO:0000189
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000190
+name: Biochemical Assay
+namespace: experiment_type
+alt_id: YPO:0000190
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000191
+name: Purified Complex
+namespace: experiment_type
+alt_id: YPO:0000191
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000192
+name: phenotype assays
+namespace: experiment_type
+alt_id: YPO:0000192
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000018 ! experiment_type
+
+[Term]
+id: APO:0000193
+name: resistance to enzymatic treatment
+namespace: observable
+alt_id: YPO:0000193
+def: "The level of resistance to treatment with enzymes." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000194
+name: ionizing radiation resistance
+namespace: observable
+alt_id: YPO:0000194
+def: "The level of resistance to ionizing radiation." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000084 ! radiation resistance
+
+[Term]
+id: APO:0000195
+name: gamma ray resistance
+namespace: observable
+alt_id: YPO:0000195
+def: "The level of resistance to gamma radiation." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000194 ! ionizing radiation resistance
+
+[Term]
+id: APO:0000196
+name: mating type switching
+namespace: observable
+alt_id: YPO:0000196
+def: "Conversion of a cell of one mating type to a different mating type." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000031 ! sexual cycle
+
+[Term]
+id: APO:0000197
+name: colony sectoring
+namespace: observable
+alt_id: YPO:0000197
+def: "Formation of wedge-shaped sectors, with a different color or appearance, in colonies of cells growing on a solid substrate." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000060 ! colony appearance
+
+[Term]
+id: APO:0000198
+name: mutation frequency
+namespace: observable
+alt_id: YPO:0000198
+def: "The frequency with which mutations occur." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000199
+name: chitin deposition
+namespace: observable
+alt_id: YPO:0000199
+def: "The pattern of chitin deposition in the cell wall." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000053 ! cell wall morphology
+
+[Term]
+id: APO:0000200
+name: budding pattern
+namespace: observable
+alt_id: YPO:0000200
+def: "The pattern with which buds emerge from a mother cell." [SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000024 ! budding
+
+[Term]
+id: APO:0000201
+name: acid pH resistance
+namespace: observable
+alt_id: YPO:0000201
+def: "The level of resistance to acidic pH." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000202
+name: alkaline pH resistance
+namespace: observable
+alt_id: YPO:0000202
+def: "The level of resistance to alkaline pH." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000203
+name: hypoosmotic stress resistance
+namespace: observable
+alt_id: YPO:0000203
+def: "The level of resistance to low osmolarity." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000082 ! osmotic stress resistance
+
+[Term]
+id: APO:0000204
+name: hyperosmotic stress resistance
+namespace: observable
+alt_id: YPO:0000204
+def: "The level of resistance to high osmolarity." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000082 ! osmotic stress resistance
+
+[Term]
+id: APO:0000205
+name: ionic stress resistance
+namespace: observable
+alt_id: YPO:0000205
+def: "The level of resistance to ionic stress." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000087 ! resistance to chemicals
+
+[Term]
+id: APO:0000206
+name: heterozygous diploid
+namespace: mutant_type
+alt_id: YPO:0000206
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because all ploidy related terms will be integrated into experiment_type terms.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000207
+name: homozygous diploid
+namespace: mutant_type
+alt_id: YPO:0000207
+def: "OBSOLETE. This term was not defined before being made obsolete." [SGD:RSN]
+comment: This term was made obsolete because all ploidy related terms will be integrated into experiment_type terms.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+
+[Term]
+id: APO:0000208
+name: chromosome segregation
+namespace: observable
+alt_id: YPO:0000208
+def: "The physical separation of chromosomes and their distribution to two or more sets during mitosis or meiosis." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000209
+name: protein/peptide distribution
+namespace: observable
+alt_id: YPO:0000209
+def: "The location(s) where the specified protein is found within the cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000210
+name: anaerobic metabolism
+namespace: observable
+alt_id: YPO:0000210
+def: "Metabolism during growth in the absence of oxygen." [SGD:curators]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000211
+name: anaerobic growth rate
+namespace: observable
+alt_id: YPO:0000211
+def: "OBSOLETE: The rate of growth in the absence of oxygen." [SGD:curators]
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000307
+
+[Term]
+id: APO:0000212
+name: bud morphology
+namespace: observable
+alt_id: YPO:0000212
+def: "The size or shape of the bud." [SGD:curators]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000213
+name: spindle morphology
+namespace: observable
+alt_id: YPO:0000213
+def: "The size, shape, or appearance of the mitotic or meiotic spindle." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000054 ! cytoskeleton morphology
+
+[Term]
+id: APO:0000214
+name: position of spindle pole body
+namespace: observable
+alt_id: YPO:0000214
+def: "The position of the mitotic or meiotic spindle pole body." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000213 ! spindle morphology
+
+[Term]
+id: APO:0000215
+name: toxin resistance
+namespace: observable
+alt_id: YPO:0000215
+def: "The level of resistance to toxins, poisonous compounds that are produced by cells or organisms." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000216
+name: fitness
+namespace: observable
+alt_id: YPO:0000216
+def: "The ability of an organism to reproduce and to produce viable progeny." [SGD:curators]
+comment: This is a top-level term that is not to be used for curation.
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000217
+name: essentiality
+namespace: observable
+alt_id: YPO:0000217
+def: "The essentiality of a gene for survival under standard conditions for growth of that organism." [SGD:curators]
+comment: This is a top-level term, not to be used for curation.
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000218
+name: redox state
+namespace: observable
+alt_id: YPO:0000218
+def: "The balance of oxidized and reduced molecules in the cell. Respiration and various environmental factors cause formation of reactive oxygen species which can oxidize and damage cellular components." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000219
+name: utilization of sulfur source
+namespace: observable
+alt_id: YPO:0000219
+def: "The ability to utilize the specified compound as a source of sulfur." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000220
+name: necrotic cell death
+namespace: observable
+alt_id: YPO:0000220
+def: "A form of cell death that is distinct from apoptosis. Cells undergoing necrotic cell death undergo overall destruction. They can be distinguished from apoptotic cells because they lose membrane integrity, which only happens late in apoptosis (positive propidium iodide staining), and do not externalize phosphatidylserine (measured by annexin V staining) as do apoptotic cells." [PMID:11535781, PMID:18656474, PMID:18782613, SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000312 ! cell death
+
+[Term]
+id: APO:0000221
+name: septum formation
+namespace: observable
+alt_id: YPO:0000221
+def: "Formation of a septum between dividing cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000053 ! cell wall morphology
+
+[Term]
+id: APO:0000222
+name: chemical compound excretion
+namespace: observable
+alt_id: YPO:0000222
+def: "The excretion from the cell of a specified chemical compound." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000223
+name: mating projection morphology
+namespace: observable
+alt_id: YPO:0000223
+def: "The outward appearance or shape of the mating projection." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000224
+name: RNA accumulation
+namespace: observable
+alt_id: YPO:0000224
+def: "Abundance of a specified RNA or class of RNAs." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000225
+name: mitotic recombination
+namespace: observable
+alt_id: YPO:0000225
+def: "Measures of the rate of recombination or total recombination observed during the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000072 ! mitotic cell cycle
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+
+[Term]
+id: APO:0000226
+name: subcellular morphology
+namespace: observable
+alt_id: YPO:0000226
+def: "The size, shape, or appearance of subcellular organelles or structures." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000050 ! cellular morphology
+
+[Term]
+id: APO:0000227
+name: cell cycle arrest in S phase
+namespace: observable
+alt_id: YPO:0000227
+def: "OBSOLETE. Arrest of cells in the S phase of the cell cycle, the phase in which DNA replication occurs." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000266
+
+[Term]
+id: APO:0000228
+name: dominant negative
+namespace: mutant_type
+alt_id: YPO:0000228
+def: "The mutation results in a gene product that interferes with the function of the normal, wild-type gene product." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000006 ! mutant_type
+
+[Term]
+id: APO:0000229
+name: homozygous diploid
+namespace: experiment_type
+alt_id: YPO:0000229
+def: "Classical genetics experiments carried out in a diploid background, where both alleles of the gene being described are identical." [SGD:RSN]
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000230
+name: heterozygous diploid
+namespace: experiment_type
+alt_id: YPO:0000230
+def: "Classical genetics experiments carried out in a diploid background, where alleles of the gene being described are not identical." [SGD:RSN]
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000231
+name: homozygous diploid, large-scale survey
+namespace: experiment_type
+alt_id: YPO:0000231
+def: "Any large-scale survey where the experiments are carried out in a homozygous diploid background." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000232
+name: heterozygous diploid, large-scale survey
+namespace: experiment_type
+alt_id: YPO:0000232
+def: "Any large-scale survey where the experiments carried our are in a heterozygous diploid background." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000233
+name: homozygous diploid, competitive growth
+namespace: experiment_type
+alt_id: YPO:0000233
+def: "Any competitive growth experiment carried out in a homozygous diploid background." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000021 ! competitive growth
+
+[Term]
+id: APO:0000234
+name: heterozygous diploid, competitive growth
+namespace: experiment_type
+alt_id: YPO:0000234
+def: "Any competitive growth experiment carried out in a heterozygous diploid background." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000021 ! competitive growth
+
+[Term]
+id: APO:0000235
+name: systematic mutation set
+namespace: experiment_type
+alt_id: YPO:0000235
+def: "Robotic generation and analysis of large-scale, genome-wide haploid knockout sets." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000236
+name: homozygous diploid, systematic mutation set
+namespace: experiment_type
+alt_id: YPO:0000236
+def: "Robotic generation and analysis of large-scale, genome-wide knockout sets carried out in a homozygous diploid background." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000235 ! systematic mutation set
+
+[Term]
+id: APO:0000237
+name: heterozygous diploid, systematic mutation set
+namespace: experiment_type
+alt_id: YPO:0000237
+def: "Robotic generation and analysis of large-scale, genome-wide mutation sets carried out in a heterozygous diploid." [SGD:RSN]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000235 ! systematic mutation set
+
+[Term]
+id: APO:0000238
+name: cell cycle arrest at the G2/M phase transition
+namespace: observable
+alt_id: YPO:0000238
+def: "OBSOLETE. Arrest of cells at the transition between the G2 and M phases of the mitotic cell cycle." [SGD:RSN]
+comment: This term was made obsolete because it incorporates a temporal aspect (arrest), and will therefore be replaced by a combination of an analagous observable that does not contain temporal information and a temporal qualifier.
+subset: AspGD
+subset: SGD
+is_obsolete: true
+consider: APO:0000250
+consider: APO:0000257
+
+[Term]
+id: APO:0000239
+name: pexophagy
+namespace: observable
+alt_id: YPO:0000239
+def: "A form of autophagy selective for peroxisomes that occurs in response to starvation, damage or as a homeostatic mechanism to regulate the levels of this organelle. Pexophagy can be further subdivided into micropexophagy, the engulfment of a cluster of peroxisomes at the vacuole surface and macropexophagy, the sequestration of individual peroxisomes by a double-membrane vesicle, followed by fusion with the vacuole." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000074 ! autophagy
+
+[Term]
+id: APO:0000240
+name: mitophagy
+namespace: observable
+alt_id: YPO:0000240
+def: "A form of autophagy selective for mitochondria that occurs in response to starvation, damage or during a shift in environmental conditions. The process can be further subdivided into micromitophagy, the engulfment of a cluster of mitochondria at the vacuole surface, and macromitophagy, the sequestration of individual mitochondria by a double-membrane vesicle, followed by fusion with the vacuole." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000074 ! autophagy
+
+[Term]
+id: APO:0000241
+name: freeze-thaw resistance
+namespace: observable
+alt_id: YPO:0000241
+def: "The level of resistance to one or more cycles of freezing and thawing." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+
+[Term]
+id: APO:0000242
+name: lipid particle morphology
+namespace: observable
+alt_id: YPO:0000242
+def: "The size, shape, or appearance of lipid particles or droplets, subcellular structures consisting of a hydrophobic core of neutral lipids (triacylglycerol and steryl esters), surrounded by a phospholipid monolayer with a small quantity of embedded proteins including enzymes involved in lipid biosynthesis. Lipid particles function as a storage compartment for lipid components." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "lipid body" EXACT [SGD:RSN]
+synonym: "lipid droplet" EXACT [SGD:RSN]
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000243
+name: Golgi morphology
+namespace: observable
+alt_id: YPO:0000243
+def: "The size, shape or appearance of the Golgi apparatus or its parts." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000303 ! endomembrane system morphology
+
+[Term]
+id: APO:0000244
+name: PCA
+namespace: experiment_type
+alt_id: YPO:0000244
+subset: SGD
+xref: BioGRID:curators
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000245
+name: decreased rate
+namespace: qualifier
+alt_id: curators
+def: "Observed feature is decreased with respect to time compared to that in the wild type (slower)." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "slower" EXACT [SGD:RSN]
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000246
+name: increased rate
+namespace: qualifier
+alt_id: YPO:0000246
+def: "Observed feature is increased with respect to time compared to that in the wild type (faster, accelerated)." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "accelerated" RELATED [SGD:RSN]
+synonym: "faster" EXACT [SGD:RSN]
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000247
+name: decreased duration
+namespace: qualifier
+alt_id: YPO:0000247
+def: "Observed feature occurs over a decreased period of time relative to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "decreased length" EXACT [SGD:RSN]
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000248
+name: increased duration
+namespace: qualifier
+alt_id: YPO:0000248
+def: "Observed feature occurs over an increased period of time relative to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "increased length" EXACT [SGD:RSN]
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000249
+name: delayed
+namespace: qualifier
+alt_id: YPO:0000249
+def: "Observed feature occurs after being postponed for a period of time relative to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "postponed" EXACT [SGD:RSN]
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000250
+name: arrested
+namespace: qualifier
+alt_id: YPO:0000250
+def: "Observed feature does not occur in a given time period relative to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000251
+name: premature
+namespace: qualifier
+alt_id: YPO:0000251
+def: "Observed feature occurs too soon, existing before the proper or usual time compared to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000002 ! abnormal
+
+[Term]
+id: APO:0000252
+name: normal rate
+namespace: qualifier
+alt_id: YPO:0000252
+def: "Observed feature occurs at the same time relative to wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000117 ! normal
+
+[Term]
+id: APO:0000253
+name: cell cycle progression
+namespace: observable
+alt_id: YPO:0000253
+def: "Progression of cells through the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000072 ! mitotic cell cycle
+
+[Term]
+id: APO:0000254
+name: cell cycle progression in G2 phase
+namespace: observable
+alt_id: YPO:0000254
+def: "Progression of cells through the G2 phase or second gap phase of the mitotic cell cycle, the interval between the completion of DNA synthesis and the beginning of mitosis." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000255
+name: cell cycle progression in G1 phase
+namespace: observable
+alt_id: YPO:0000255
+def: "Progression of cells through the G1 or first gap phase of the mitotic cell cycle, the interval between the completion of mitosis and the beginning of DNA synthesis." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000256
+name: cell cycle passage through START
+namespace: observable
+alt_id: YPO:0000256
+def: "Passage of cells through cell cycle control point or checkpoint located late in the G1 phase of the mitotic cell cycle just prior to S phase entry; passage through START results in commits cells to progression through the entire cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "G1 checkpoint" EXACT [SGD:RSN]
+is_a: APO:0000255 ! cell cycle progression in G1 phase
+
+[Term]
+id: APO:0000257
+name: cell cycle progression through the G2/M phase transition
+namespace: observable
+alt_id: YPO:0000257
+def: "Progression of cells from G2 phase to M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000258
+name: cell cycle progression in M phase
+namespace: observable
+alt_id: YPO:0000258
+def: "Progression of cells through the M phase of the mitotic cell cycle, the phase in which mitosis occurs." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000259
+name: cell cycle passage through the metaphase-anaphase transition
+namespace: observable
+alt_id: YPO:0000259
+def: "Progression of cells from metaphase to anaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000258 ! cell cycle progression in M phase
+
+[Term]
+id: APO:0000260
+name: cell cycle progression in anaphase
+namespace: observable
+alt_id: YPO:0000260
+def: "Progression of cells through anaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000258 ! cell cycle progression in M phase
+
+[Term]
+id: APO:0000261
+name: cell cycle progression in early anaphase
+namespace: observable
+alt_id: YPO:0000261
+def: "Progression of cells through early anaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000260 ! cell cycle progression in anaphase
+
+[Term]
+id: APO:0000262
+name: cell cycle progression in mid anaphase
+namespace: observable
+alt_id: YPO:0000262
+def: "Progression of cells through mid anaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000260 ! cell cycle progression in anaphase
+
+[Term]
+id: APO:0000263
+name: cell cycle progression in late anaphase
+namespace: observable
+alt_id: YPO:0000263
+def: "Progression of cells through late anaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000260 ! cell cycle progression in anaphase
+
+[Term]
+id: APO:0000264
+name: cell cycle progression in metaphase
+namespace: observable
+alt_id: YPO:0000264
+def: "Progression of cells through metaphase during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000258 ! cell cycle progression in M phase
+
+[Term]
+id: APO:0000265
+name: cell cycle progression in telophase
+namespace: observable
+alt_id: YPO:0000265
+def: "Progression of cells through telophase, the last of the stages of mitosis during M phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000258 ! cell cycle progression in M phase
+
+[Term]
+id: APO:0000266
+name: cell cycle progression in S phase
+namespace: observable
+alt_id: YPO:0000266
+def: "Progression of cells through S phase, the part of the mitotic cell cycle where DNA synthesis occurs." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000267
+name: entry into G0 (stationary phase)
+namespace: observable
+alt_id: YPO:0000267
+def: "Entry of cells into the G0 or stationary phase of the mitotic cell cycle, where they enter a quiescent state." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000072 ! mitotic cell cycle
+
+[Term]
+id: APO:0000268
+name: exit from G0 (stationary phase)
+namespace: observable
+alt_id: YPO:0000268
+def: "Exit of cells from the G0 or stationary phase of the mitotic cell cycle, where they move from a quiescent state to one where growth and division resumes in the G1 phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000072 ! mitotic cell cycle
+
+[Term]
+id: APO:0000269
+name: cell cycle progression through the G1/S phase transition
+namespace: observable
+alt_id: YPO:0000269
+def: "Progression of cells from G1 phase to S phase of the mitotic cell cycle." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000253 ! cell cycle progression
+
+[Term]
+id: APO:0000270
+name: endoplasmic reticulum morphology
+namespace: observable
+alt_id: YPO:0000270
+def: "The size, shape, or appearance of the endoplasmic reticulum (ER) or its parts." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000303 ! endomembrane system morphology
+
+[Term]
+id: APO:0000271
+name: RNA modification
+namespace: observable
+alt_id: YPO:0000271
+def: "Covalent modification of a specified RNA; type of modification specified." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000272
+name: Synthetic Haploinsufficiency
+namespace: experiment_type
+alt_id: YPO:0000272
+subset: SGD
+xref: BioGRID:curators
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000273
+name: nucleolar morphology
+namespace: observable
+alt_id: curators
+def: "The size, shape, or appearance of the nucleolus or its parts." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000057 ! nuclear morphology
+
+[Term]
+id: APO:0000274
+name: prion state
+namespace: observable
+alt_id: YPO:0000274
+def: "The presence or absence of prions." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000275
+name: prion inheritance
+namespace: observable
+alt_id: YPO:0000275
+def: "The transmission of prions from a mother cell to a daughter cell during budding." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000274 ! prion state
+
+[Term]
+id: APO:0000276
+name: prion formation
+namespace: observable
+alt_id: YPO:0000276
+def: "The conversion from the state of being prion-free to the state of having prions." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "prion acquisition" EXACT []
+is_a: APO:0000274 ! prion state
+
+[Term]
+id: APO:0000277
+name: prion loss
+namespace: observable
+alt_id: YPO:0000277
+def: "The conversion from the state of having prions to the state of being prion-free." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "prion curing" RELATED []
+is_a: APO:0000274 ! prion state
+
+[Term]
+id: APO:0000278
+name: normal duration
+namespace: qualifier
+alt_id: YPO:0000278
+def: "Observed feature does not change with respect to time compared to that in the wild type." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000117 ! normal
+
+[Term]
+id: APO:0000279
+name: haploid, classical genetics
+namespace: experiment_type
+def: "Any classical genetics experiment carried out in a haploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000280
+name: haploid, competitive growth
+namespace: experiment_type
+def: "Any competitive growth experiment carried out in a haploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000021 ! competitive growth
+
+[Term]
+id: APO:0000281
+name: haploid, large-scale survey
+namespace: experiment_type
+def: "Any large-scale survey experiment carried out in a haploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000282
+name: aneuploid, classical genetics
+namespace: experiment_type
+def: "Any classical genetics experiment carried out in an aneuploid background, where the strain carries more or fewer copies than normal of a large chromosomal region, or of one or more entire chromosomes." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000283
+name: aneuploid, large-scale survey
+namespace: experiment_type
+def: "Any large-scale survey experiment carried out in an aneuploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000114 ! large-scale survey
+
+[Term]
+id: APO:0000284
+name: aneuploid, competitive growth
+namespace: experiment_type
+def: "Any competitive growth experiment carried out in an aneuploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000021 ! competitive growth
+
+[Term]
+id: APO:0000285
+name: haploid, systematic mutation set
+namespace: experiment_type
+def: "Robotic generation and analysis of large-scale, genome-wide knockout sets carried out in a haploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000235 ! systematic mutation set
+
+[Term]
+id: APO:0000286
+name: aneuploid, systematic mutation set
+namespace: experiment_type
+def: "Robotic generation and analysis of large-scale, genome-wide knockout sets carried out in an aneuploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000235 ! systematic mutation set
+
+[Term]
+id: APO:0000287
+name: interaction with host/environment
+namespace: observable
+def: "Processes relating to interaction with the environment or with a host organism." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000017 ! observable
+
+[Term]
+id: APO:0000288
+name: adhesion
+namespace: observable
+def: "Adherence to a substrate in the environment or in a host." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000287 ! interaction with host/environment
+
+[Term]
+id: APO:0000289
+name: response to light
+namespace: observable
+def: "The response to visible light." [AspGD:mcc]
+subset: AspGD
+subset: CryptoGD
+is_a: APO:0000287 ! interaction with host/environment
+
+[Term]
+id: APO:0000290
+name: allergy induction
+namespace: observable
+def: "OBSOLETE: The induction of an allergic response in the host organism." [AspGD:mcc]
+subset: AspGD
+subset: CryptoGD
+is_obsolete: true
+
+[Term]
+id: APO:0000291
+name: formation of anatomical structure
+namespace: observable
+def: "The development of a discrete anatomical structure." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000292
+name: secondary metabolite production
+namespace: observable
+def: "The production of secondary metabolites, which are compounds that are not directly involved in normal growth, development or reproduction." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000094 ! metabolism and growth
+
+[Term]
+id: APO:0000293
+name: utilization of zinc source
+namespace: observable
+def: "The ability to utilize the specified compound as a source of zinc." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000294
+name: utilization of magnesium source
+namespace: observable
+def: "The ability to utilize the specified compound as a source of magnesium." [AspGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000096 ! nutrient utilization
+
+[Term]
+id: APO:0000295
+name: conidiation
+namespace: observable
+def: "The formation of conidia, which are asexual spores." [AspGD:mcc]
+subset: AspGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000296
+name: organelle distribution
+namespace: observable
+def: "The localization and placement of a particular organelle." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000073 ! intracellular transport
+
+[Term]
+id: APO:0000297
+name: mitochondrial distribution
+namespace: observable
+def: "The localization and placement of mitochondria within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000298
+name: peroxisomal distribution
+namespace: observable
+def: "The localization and placement of peroxisomes within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000299
+name: vacuolar distribution
+namespace: observable
+def: "The localization and placement of vacuoles within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000300
+name: endoplasmic reticulum distribution
+namespace: observable
+def: "The localization and placement of endoplasmic reticulum (ER) within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000301
+name: Golgi distribution
+namespace: observable
+def: "The localization and placement of the Golgi apparatus within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000302
+name: vesicle distribution
+namespace: observable
+def: "The localization and placement of secretory, endocytic, or undefined vesicles within a cell or between separating cells." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000296 ! organelle distribution
+
+[Term]
+id: APO:0000303
+name: endomembrane system morphology
+namespace: observable
+def: "The size, shape, or appearance of components of the endomembrane system, which includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, peroxisomes, vacuoles, and endocytic and exocytic vesicles." [PMID:19121819, SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000304
+name: heterozygous diploid, classical genetics
+namespace: experiment_type
+def: "Any classical genetics experiment carried out in a heterozygous diploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000305
+name: homozygous diploid, classical genetics
+namespace: experiment_type
+def: "Any classical genetics experiment carried out in a homozygous diploid background." [AspGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000020 ! classical genetics
+
+[Term]
+id: APO:0000306
+name: conidial germination
+namespace: observable
+def: "The production of viable cells arising from conidia, or asexual spores." [AspGD:mcc]
+subset: AspGD
+is_a: APO:0000295 ! conidiation
+
+[Term]
+id: APO:0000307
+name: anaerobic growth
+namespace: observable
+def: "Growth in the absence of oxygen." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000210 ! anaerobic metabolism
+
+[Term]
+id: APO:0000308
+name: fermentative growth
+namespace: observable
+def: "Growth while utilizing a fermentable carbon source." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000101 ! fermentative metabolism
+
+[Term]
+id: APO:0000309
+name: respiratory growth
+namespace: observable
+def: "Growth while utilizing a nonfermentable carbon source." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000102 ! respiratory metabolism
+
+[Term]
+id: APO:0000310
+name: growth in exponential phase
+namespace: observable
+def: "Growth in liquid culture during the exponential phase." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000106 ! vegetative growth
+
+[Term]
+id: APO:0000311
+name: growth in post-diauxic phase
+namespace: observable
+def: "Growth in liquid culture during the post-diauxic phase." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000106 ! vegetative growth
+
+[Term]
+id: APO:0000312
+name: cell death
+namespace: observable
+def: "The cessation of the life of an individual cell." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000066 ! cellular processes
+
+[Term]
+id: APO:0000313
+name: autolysis
+namespace: observable
+def: "A regulated form of cell death that occurs in stationary phase mycelial cultures of filamentous fungi, often in response to carbon starvation. It is characterized by cell wall degradation, hyphal fragmentation and vacuolization, production of intracellular and extracellular hydrolases, and release of ammonia." [AspGD:mcc, PMID:12892635, PMID:18975147, PMID:19286987]
+subset: AspGD
+is_a: APO:0000312 ! cell death
+
+[Term]
+id: APO:0000314
+name: cell lysis
+namespace: observable
+def: "The breaking apart of a fully formed cell." [AspGD:di]
+subset: AspGD
+subset: CryptoGD
+is_a: APO:0000312 ! cell death
+
+[Term]
+id: APO:0000315
+name: plasma membrane morphology
+namespace: observable
+def: "The size, shape, or appearance of the plasma membrane." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000226 ! subcellular morphology
+
+[Term]
+id: APO:0000316
+name: chronological lifespan
+namespace: observable
+def: "The number of days that a culture remains viable in stationary phase." [PMID:17634577, SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000030 ! lifespan
+
+[Term]
+id: APO:0000317
+name: replicative lifespan
+namespace: observable
+def: "The number of divisions that a cell undergoes before dying." [PMID:17634577, SGD:mcc]
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000030 ! lifespan
+
+[Term]
+id: APO:0000318
+name: Affinity Capture-Luminescence
+namespace: experiment_type
+def: "An interaction is inferred when a bait protein, tagged with luciferase, is enzymatically detected in immunoprecipitates of the prey protein as light emission. The prey protein is affinity captured from cell extracts by either polyclonal antibody or epitope tag." [BioGRID:mcc]
+subset: SGD
+is_a: APO:0000187 ! physical interactions
+
+[Term]
+id: APO:0000319
+name: chlamydospore formation
+namespace: observable
+def: "Formation of chlamydospores, which are large, asexual, one-celled spores with a thickened, refractile cell wall that are borne on the ends of suspensor cells attached to hyphae or pseudohyphae." [CGD:mcc, PMID:14663094]
+subset: CGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000320
+name: germ tube formation
+namespace: observable
+def: "Formation of an elongated evagination that develops from a yeast-form cell and continues growth to become a hyphal cell. The initiation of germ tube growth is referred to as the yeast-to-hyphal transition." [CGD:mcc, PMID:17506678]
+subset: CGD
+is_a: APO:0000027 ! filamentous growth
+
+[Term]
+id: APO:0000321
+name: phenotypic switching
+namespace: observable
+def: "The ability to undergo a reversible change from one distinct phenotype to another, resulting from changes in gene expression rather than from mutation. Cells in a specific phenotypic state have a distinct cellular morphology, which may be reflected in distinct colony morphology and different cellular properties, such as the ability to mate. A well-known example of phenotypic switching is the white-opaque switch of Candida albicans." [CGD:mcc, PMID:16313617, PMID:17506678]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000023 ! development
+
+[Term]
+id: APO:0000322
+name: Negative Genetic
+namespace: experiment_type
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000323
+name: Positive Genetic
+namespace: experiment_type
+subset: SGD
+is_a: APO:0000186 ! genetic interactions
+
+[Term]
+id: APO:0000324
+name: resistance to killing by host cells
+namespace: observable
+def: "The ability of a pathogen to survive an attack by host cells such as neutrophils." [CGD:mcc, PMID:20415594]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000287 ! interaction with host/environment
+created_by: Maria
+creation_date: 2010-05-12T09:18:26Z
+
+[Term]
+id: APO:0000325
+name: resistance to phagocytosis
+namespace: observable
+def: "The ability of a pathogen to evade or escape phagocytosis by host cells such as macrophages." [CGD:mcc, PMID:16759234]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000287 ! interaction with host/environment
+created_by: Maria
+creation_date: 2010-05-12T09:20:05Z
+
+[Term]
+id: APO:0000326
+name: desiccation resistance
+namespace: observable
+def: "The level of resistance to air-drying or desiccation stress." [PMID:18224659, SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+created_by: Maria
+creation_date: 2010-05-12T09:22:02Z
+
+[Term]
+id: APO:0000327
+name: hydrostatic pressure resistance
+namespace: observable
+def: "The level of resistance to increased hydrostatic pressure." [PMID:11027279, PMID:18245339, SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000080 ! stress resistance
+created_by: Maria
+creation_date: 2010-05-12T09:22:53Z
+
+[Term]
+id: APO:0000328
+name: unknown ploidy, classical genetics
+namespace: experiment_type
+def: "Any classical genetics experiment carried out in a background where the ploidy of the mutation or strain is unknown." [CGD:mcc]
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000020 ! classical genetics
+created_by: Maria
+creation_date: 2010-10-26T03:35:09Z
+
+[Term]
+id: APO:0000329
+name: induction of host response
+namespace: observable
+def: "The induction of host immune cell differentiation, cytokine secretion, cytokine transcriptional regulation or other related host responses to infection by or contact with a microbe." [AspGD:doi]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+is_a: APO:0000287 ! interaction with host/environment
+created_by: Maria
+creation_date: 2011-01-28T09:00:49Z
+
+[Term]
+id: APO:0000330
+name: haploproficient
+namespace: observable
+def: "The heterozygous diploid displays an increased growth rate relative to a diploid that is homozygous wild type at that locus." [PMID:23531409, SGD:mcc]
+subset: AspGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000216 ! fitness
+created_by: mariacostanzo
+creation_date: 2013-04-16T01:29:09Z
+
+[Term]
+id: APO:0000331
+name: capsule formation
+namespace: observable
+def: "The formation of a coating of extracellular polysaccharide material, as in fungi such a Cryptococcus." [CryptoGD:doi]
+subset: CryptoGD
+is_a: APO:0000291 ! formation of anatomical structure
+created_by: mariacostanzo
+creation_date: 2013-04-16T02:21:42Z
+
+[Term]
+id: APO:0000332
+name: peg formation
+namespace: observable
+def: "Formation of a protrusion in a subapical hyphal cell that fuses with a clamp cell to form a fused clamp, in Basidiomycetes." [CryptoGD:doi]
+subset: CryptoGD
+is_a: APO:0000291 ! formation of anatomical structure
+created_by: mariacostanzo
+creation_date: 2013-04-16T02:23:17Z
+
+[Term]
+id: APO:0000333
+name: acquired thermotolerance
+namespace: observable
+def: "The ability to survive a period of exposure to an acute heat shock after brief pretreatment at a mildly elevated temperature." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000093 ! thermotolerance
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:27:33Z
+
+[Term]
+id: APO:0000334
+name: innate thermotolerance
+namespace: observable
+def: "The natural or innate ability of a cell to survive a period of exposure to an acute heat shock without pretreatment." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000093 ! thermotolerance
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:28:34Z
+
+[Term]
+id: APO:0000335
+name: size of nucleolus
+namespace: observable
+def: "The size of the nucleolus." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000273 ! nucleolar morphology
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:30:01Z
+
+[Term]
+id: APO:0000336
+name: aneuploidy
+namespace: observable
+def: "The gain or loss of a chromosome, so that the cell has a number of chromosomes that is not a multiple of the usual complement. Aneuploidy may also be partial, affecting a large segment of a chromosome that is lost or translocated to a different chromosome." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:30:54Z
+
+[Term]
+id: APO:0000337
+name: polyploidy
+namespace: observable
+def: "The gain of an entire set or sets of chromosomes beyond the usual complement." [SGD:mcc]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000143 ! chromosome/plasmid maintenance
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:31:39Z
+
+[Term]
+id: APO:0000338
+name: micronucleophagy
+namespace: observable
+def: "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+synonym: "piecemeal microautophagy of the nucleus" EXACT [SGD:mcc]
+is_a: APO:0000074 ! autophagy
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:32:30Z
+
+[Term]
+id: APO:0000339
+name: ribophagy
+namespace: observable
+def: "A form of macroautophagy selective for ribosomes that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000074 ! autophagy
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:33:49Z
+
+[Term]
+id: APO:0000340
+name: reticulophagy
+namespace: observable
+def: "A form of macroautophagy selective for the endoplasmic reticulum that occurs in response to starvation, ER stress, aggregate accumulation or during a shift in environmental conditions." [SGD:RSN]
+subset: AspGD
+subset: CGD
+subset: CryptoGD
+subset: SGD
+is_a: APO:0000074 ! autophagy
+created_by: mariacostanzo
+creation_date: 2014-06-30T03:34:39Z
+
