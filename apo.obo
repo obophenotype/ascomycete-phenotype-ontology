@@ -10,6 +10,7 @@ subsetdef: SGD "APO terms in use at SGD"
 default-namespace: ascomycete_phenotype_ontology
 namespace-id-rule: * APO:$sequence(7,0000001,9999999)$
 remark: Filtered by Subset contains "SGD"
+ontology: apo
 
 [Term]
 id: APO:0000001
