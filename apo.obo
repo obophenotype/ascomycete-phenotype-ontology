@@ -132,7 +132,7 @@ is_a: APO:0000006 ! mutant_type
 
 [Term]
 id: APO:0000011
-name: null
+name: null mutant
 namespace: mutant_type
 alt_id: YPO:0000011
 def: "The mutation abolishes completely the function of the gene product." [SGD:RSN]
@@ -141,6 +141,7 @@ subset: CGD
 subset: CryptoGD
 subset: SGD
 synonym: "loss of function" RELATED [SGD:RSN]
+synonym: "null" EXACT []
 is_a: APO:0000006 ! mutant_type
 
 [Term]
