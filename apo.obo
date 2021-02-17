@@ -8,11 +8,11 @@ subsetdef: phenotypeslim_cerevisiae "Phenotype Slim terms for S. cerevisiae"
 default-namespace: ascomycete_phenotype_ontology
 ontology: apo
 property_value: http://purl.org/dc/elements/1.1/modified "02:01:2021" xsd:string
-property_value: http://purl.org/dc/terms/contributor "Suzi Aleksander" xsd:string
-property_value: http://purl.org/dc/terms/contributor "Maria Costanzo" xsd:string
-property_value: http://purl.org/dc/terms/title "Ascomycete Phenotype Ontology (APO)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Suzi Aleksander" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Maria Costanzo" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ascomycete Phenotype Ontology (APO)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary for the phenotypes of Ascomycete fungi." xsd:string
-property_value: http://purl.org/dc/terms/creator https://www.yeastgenome.org/
+property_value: http://purl.org/dc/elements/1.1/creator https://www.yeastgenome.org/
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
 remark: Filtered by Subset contains "SGD"; contact sgd-helpdesk@lists.stanford.edu
 auto-generated-by: OBO-Edit 2.1
