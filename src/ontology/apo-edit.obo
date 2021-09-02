@@ -1,16 +1,22 @@
 format-version: 1.2
-date: 12:06:2015 14:28
-saved-by: mariacostanzo
-auto-generated-by: OBO-Edit 2.1
+date: 02:02:2021 14:22
 subsetdef: AspGD "APO terms in use at AspGD"
 subsetdef: CGD "APO terms in use at CGD"
 subsetdef: CryptoGD "APO terms in use at CryptoGD"
-subsetdef: phenotypeslim_cerevisiae "Phenotype Slim terms for S. cerevisiae"
 subsetdef: SGD "APO terms in use at SGD"
+subsetdef: phenotypeslim_cerevisiae "Phenotype Slim terms for S. cerevisiae"
 default-namespace: ascomycete_phenotype_ontology
-namespace-id-rule: * APO:$sequence(7,0000001,9999999)$
-remark: Filtered by Subset contains "SGD"
 ontology: apo
+property_value: http://purl.org/dc/elements/1.1/modified "02:01:2021" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Suzi Aleksander" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Maria Costanzo" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ascomycete Phenotype Ontology (APO)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary for the phenotypes of Ascomycete fungi." xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://www.yeastgenome.org/
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
+remark: Filtered by Subset contains "SGD"; contact sgd-helpdesk@lists.stanford.edu
+auto-generated-by: OBO-Edit 2.1
+namespace-id-rule: * APO:$sequence(7,0000001,9999999)$
 
 [Term]
 id: APO:0000001
@@ -3872,7 +3878,7 @@ creation_date: 2014-06-30T03:31:39Z
 id: APO:0000338
 name: micronucleophagy
 namespace: observable
-def: "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
+def: "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
 subset: AspGD
 subset: CGD
 subset: CryptoGD
@@ -3933,4 +3939,3 @@ subset: SGD
 is_a: APO:0000074 ! autophagy
 created_by: mariacostanzo
 creation_date: 2015-06-12T01:59:32Z
-
