@@ -4,7 +4,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.2.27
+    container: obolibrary/odkfull:v1.2.29
     strategy:
       max-parallel: 1
     steps:
