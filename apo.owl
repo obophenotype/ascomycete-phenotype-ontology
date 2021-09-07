@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/apo.owl#"
      xml:base="http://purl.obolibrary.org/obo/apo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:apo="http://purl.obolibrary.org/obo/apo#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,17 +9,24 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/apo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/apo/releases/2021-09-02/apo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/apo/releases/2021-09-07/apo.owl"/>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria Costanzo</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suzi Aleksander</dc:contributor>
+        <dc:creator rdf:resource="https://www.yeastgenome.org/"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structured controlled vocabulary for the phenotypes of Ascomycete fungi.</dc:description>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:01:2021</dc:modified>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ascomycete Phenotype Ontology (APO)</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">* APO:$sequence(7,0000001,9999999)$</oboInOwl:NamespaceIdRule>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:06:2015 14:28</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02:02:2021 14:22</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ascomycete_phenotype_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:saved-by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filtered by Subset contains &quot;SGD&quot;</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-02</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filtered by Subset contains &quot;SGD&quot;; contact sgd-helpdesk@lists.stanford.edu</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -214,12 +222,6 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
     
 
 
@@ -7743,7 +7745,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APO_0000338">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APO_0000074"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariacostanzo</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-30T03:32:30Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piecemeal microautophagy of the nucleus</oboInOwl:hasExactSynonym>
@@ -7758,7 +7760,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APO_0000338"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGD:RSN</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>

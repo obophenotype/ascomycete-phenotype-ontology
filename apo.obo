@@ -1,7 +1,6 @@
 format-version: 1.2
-data-version: releases/2021-09-02
-date: 12:06:2015 14:28
-saved-by: mariacostanzo
+data-version: releases/2021-09-07
+date: 02:02:2021 14:22
 auto-generated-by: OBO-Edit 2.1
 subsetdef: AspGD "APO terms in use at AspGD"
 subsetdef: CGD "APO terms in use at CGD"
@@ -10,9 +9,16 @@ subsetdef: phenotypeslim_cerevisiae "Phenotype Slim terms for S. cerevisiae"
 subsetdef: SGD "APO terms in use at SGD"
 default-namespace: ascomycete_phenotype_ontology
 namespace-id-rule: * APO:$sequence(7,0000001,9999999)$
-remark: Filtered by Subset contains \"SGD\"
+remark: Filtered by Subset contains \"SGD\"; contact sgd-helpdesk@lists.stanford.edu
 ontology: apo
-property_value: owl:versionInfo "2021-09-02" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Maria Costanzo" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Suzi Aleksander" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://www.yeastgenome.org/
+property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary for the phenotypes of Ascomycete fungi." xsd:string
+property_value: http://purl.org/dc/elements/1.1/modified 02:01:2021 xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ascomycete Phenotype Ontology (APO)" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
+property_value: owl:versionInfo "2021-09-07" xsd:string
 
 [Term]
 id: APO:0000001
@@ -3874,7 +3880,7 @@ creation_date: 2014-06-30T03:31:39Z
 id: APO:0000338
 name: micronucleophagy
 namespace: observable
-def: "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
+def: "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions." [SGD:RSN]
 subset: AspGD
 subset: CGD
 subset: CryptoGD
