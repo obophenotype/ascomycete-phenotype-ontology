@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/apo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/apo/releases/2021-09-07/apo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/apo/releases/2021-10-07/apo.owl"/>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria Costanzo</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suzi Aleksander</dc:contributor>
         <dc:creator rdf:resource="https://www.yeastgenome.org/"/>
@@ -26,7 +26,7 @@
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ascomycete_phenotype_ontology</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filtered by Subset contains &quot;SGD&quot;; contact sgd-helpdesk@lists.stanford.edu</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-07</owl:versionInfo>
     </owl:Ontology>
     
 
