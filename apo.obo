@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-07-02
+data-version: releases/2024-08-03
 date: 02:02:2021 14:22
 auto-generated-by: OBO-Edit 2.1
 subsetdef: AspGD "APO terms in use at AspGD"
@@ -18,7 +18,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A structured contro
 property_value: http://purl.org/dc/elements/1.1/modified 02:01:2021 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Ascomycete Phenotype Ontology (APO)" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2024-07-02" xsd:string
+property_value: owl:versionInfo "2024-08-03" xsd:string
 
 [Term]
 id: APO:0000001
